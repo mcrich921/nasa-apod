@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 1);
+  background-color: #100522;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  flex: 1;
+  object-fit: cover;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+footer h2 {
+  font-size: 2.4rem;
+  font-family: "Orbitron", sans-serif;
+}
+
+footer h1 {
+  font-size: 0.9rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+footer h1,
+h2 {
+  margin-left: 1rem;
+}
+
+footer button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  padding: 1rem;
+  transition-duration: 100ms;
+  cursor: pointer;
+}
+
+footer button:hover {
+  opacity: 0.75;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.textGrad {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to top,
+    #100522,
+    rgba(255, 255, 255, 0)
+  ); /* little gradient to make sure text readable */
+}
+
+.sidebar {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 1; /* Go above footer text */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #100522;
+  opacity: 0.6;
+}
+
+.contents {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: scroll;
+  padding: 1rem;
+  height: 100%;
+  width: 80%;
+  max-width: 800px;
+  margin-left: auto;
+  background: #100522;
+}
+
+.contents div {
+  flex: 1;
+}
+
+.contents button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  margin-right: auto;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+.contents button:hover {
+  opacity: 0.75;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.contents h2 {
+  font-family: "Orbitron", sans-serif;
+  margin-left: 0;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Orbitron", sans-serif;
+}
+
+.loading i {
+  font-size: 5rem;
+}
+
+hr {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .sidebar {
+    position: relative;
+    inset: unset;
+    min-width: 30%;
+    box-shadow: 0 0 100px 1px #100522;
+  }
+
+  .contents {
+    margin: unset;
+    width: 100%;
+  }
+}

@@ -121,7 +121,7 @@ If they are not installed on your computer, follow installation instructions for
 
 <a id="license"></a>
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,7 +156,7 @@ Matthew Rich - mrich@wesleyan.edu
 [issues-shield]: https://img.shields.io/github/issues/mcrich921/nasa-apod.svg?style=for-the-badge
 [issues-url]: https://github.com/mcrich921/nasa-apod/issues
 [license-shield]: https://img.shields.io/github/license/mcrich921/nasa-apod.svg?style=for-the-badge
-[license-url]: https://github.com/mcrich921/nasa-apod/blob/master/LICENSE.txt
+[license-url]: https://github.com/mcrich921/nasa-apod/tree/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/matthewrichc
 [product-screenshot]: images/screenshot.png

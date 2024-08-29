@@ -10,11 +10,14 @@ function Footer(props) {
         <h2>{data?.title}</h2>
         <h1>NASA Astronomy Picture of the Day</h1>
       </div>
-      {!showInfo && (
-        <button onClick={handleToggleInfo}>
+      {
+        <button
+          onClick={handleToggleInfo}
+          style={{ visibility: !showInfo ? "visible" : "hidden" }}
+        >
           <i className="fa-solid fa-circle-info"></i>
         </button>
-      )}
+      }
     </footer>
   );
 }
